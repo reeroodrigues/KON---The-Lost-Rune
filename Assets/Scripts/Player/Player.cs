@@ -45,7 +45,6 @@ public class Player : MonoBehaviour
             {
                 animator.speed = 1;
             }
-           //
        }
        
 
