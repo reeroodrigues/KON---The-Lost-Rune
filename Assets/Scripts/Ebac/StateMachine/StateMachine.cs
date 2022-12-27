@@ -2,51 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using System;
 
-public class StateMachine : MonoBehaviour
+public class Test
 {
-    public enum States
+    public enum Test2
     {
-        NONE,
+        NONE
     }
+    
+    public void Ad()
+    {
+        StateMachine<Test2> stateMachine = new StateMachine<Test2>();
+        stateMachine.RegisterStates(Test.Test2.NONE, new StateBase());
+    }
+}
 
-    //chave
-    public Dictionary<States, StateBase> dictionaryState;
+public class StateMachine<T> where T : System.Enum
+{
+    public Dictionary<T, StateBase> dictionaryState;
 
     private StateBase _currentState;
     public float timeToStartGame = 1f;
 
-    private void Awake()
+    public StateBase currentState
     {
-        dictionaryState = new Dictionary<States, StateBase>();
-        dictionaryState.Add(States.NONE, new StateBase());
-
-        SwitchState(States.NONE);
-
-        Invoke(nameof(StartGame), timeToStartGame);
+        get { return _currentState; }
     }
 
-    [Button]
-    private void StartGame()
+    public void Init()
     {
-        SwitchState(States.NONE);
-    }
-#if UNITY_EDITOR
-    #region DEBUG
-    [Button]
-    private void ChangeStateToStateX()
-    {
-        SwitchState(States.NONE);
+        dictionaryState = new Dictionary<T, StateBase>();
     }
 
-    [Button]
-    private void ChangeStateToStateY()
+    public void RegisterStates(T typeEnum, StateBase state)
     {
-        SwitchState(States.NONE);
+        dictionaryState.Add(typeEnum, state);
     }
-    #endregion
-#endif
-    private void SwitchState(States state)
+
+    public void SwitchState(T state)
     {
         if(_currentState != null)
         {
@@ -57,16 +51,11 @@ public class StateMachine : MonoBehaviour
         _currentState.OnStateEnter();
     }
 
-    private void Update()
+    public void Update()
     {
         if(_currentState != null)
         {
             _currentState.OnStateStay();
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            //SwitchState(States.NONE);
         }
     }
 }
