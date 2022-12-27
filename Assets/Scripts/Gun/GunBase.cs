@@ -13,7 +13,7 @@ public class GunBase : MonoBehaviour
 
     public KeyCode keyCode = KeyCode.Z;
 
-    IEnumerator ShootCoroutine()
+    protected virtual IEnumerator ShootCoroutine()
     {
         while (true)
         {
