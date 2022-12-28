@@ -4914,6 +4914,7 @@ GameObject:
   - component: {fileID: 4273101537546403606}
   - component: {fileID: 4273101537546403600}
   - component: {fileID: 4273101537546403601}
+  - component: {fileID: 198095358}
   m_Layer: 0
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -4984,7 +4985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e0788c9d713704085c5b04967d8cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 6630162468247186073}
   animationSetups:
   - animationType: 1
     trigger: Idle
@@ -4994,6 +4995,33 @@ MonoBehaviour:
     trigger: Attack
   - animationType: 4
     trigger: Death
+--- !u!114 &198095358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273101537546403605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe507a94f112c494e9a675a540a0d107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 4273101537546403600}
+  flashColor: {fileID: 0}
+  particleSystem: {fileID: 4273101537315820503}
+  startLife: 10
+  _currentLife: 0
+  _animationBase: {fileID: 4273101537546403601}
+  startAnimationDuration: 0.2
+  startAnimationEase: 27
+  startWithBornAnimation: 1
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  minDistance: 1
+  speed: 1
 --- !u!1001 &4273101536724107602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5066,5 +5094,10 @@ PrefabInstance:
 --- !u!4 &5470778804501513647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8115776127002297597, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
+  m_PrefabInstance: {fileID: 4273101536724107602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6630162468247186073 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7443898874300591051, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
   m_PrefabInstance: {fileID: 4273101536724107602}
   m_PrefabAsset: {fileID: 0}
