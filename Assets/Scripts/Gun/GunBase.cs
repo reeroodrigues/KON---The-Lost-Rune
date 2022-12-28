@@ -46,4 +46,12 @@ public class GunBase : MonoBehaviour
             StopCoroutine(_currentCoroutine);
         }
     }
+
+    public void ChangeGun()
+    {
+        if (_currentCoroutine != null)
+        {
+            StopCoroutine(_currentCoroutine);
+        }
+    }
 }
