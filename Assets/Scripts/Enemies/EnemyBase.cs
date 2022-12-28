@@ -69,6 +69,8 @@ namespace Enemy
                 particleSystem.Emit(15);
             }
 
+            transform.position -= transform.forward;
+
             _currentLife -= f;
 
             if (_currentLife <= 0)
@@ -89,19 +91,17 @@ namespace Enemy
         }
 
         #endregion
-        //debug
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                OnDamage(5f);
-            }
-        }
 
         public void Damage(float damage)
         {
             Debug.Log("Damage");
             OnDamage(damage);
+        }
+
+        public void Damage(float damage, Vector3 dir)
+        {
+            OnDamage(damage);
+            transform.DOMove(transform.position - dir, .1f);
         }
     }
 }
