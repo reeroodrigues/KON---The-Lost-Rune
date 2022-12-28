@@ -4972,7 +4972,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.373932, y: 3.8892603, z: 4.78146}
-  m_Center: {x: 0.010116577, y: -0.21877337, z: 0.07019615}
+  m_Center: {x: 0.010116577, y: -0.21877337, z: -2.76}
 --- !u!114 &4273101537546403601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5021,7 +5021,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   minDistance: 1
-  speed: 1
+  speed: 9
 --- !u!1001 &4273101536724107602
 PrefabInstance:
   m_ObjectHideFlags: 0
