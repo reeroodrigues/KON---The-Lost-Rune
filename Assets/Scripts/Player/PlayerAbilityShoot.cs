@@ -16,6 +16,7 @@ public class PlayerAbilityShoot : PlayerAbilityBase
 
         inputs.Gameplay.Shoot.performed += ctx => StartShoot();
         inputs.Gameplay.Shoot.canceled += ctx => CancelShoot();
+        inputs.Gameplay.Gun.performed += ctx => ChangeGun();
     }
 
     private void CreateGun()
@@ -34,5 +35,11 @@ public class PlayerAbilityShoot : PlayerAbilityBase
     {
         _currentGun.StopShoot();
         Debug.Log("Cancel Shoot");
+    }
+
+    private void ChangeGun()
+    {
+        _currentGun.ChangeGun();
+        Debug.Log("Change Gun");
     }
 }
