@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Itens;
 
 public class ItemCollectableCoin : ItemColectableBase
 {
@@ -8,6 +9,6 @@ public class ItemCollectableCoin : ItemColectableBase
     {
         base.OnCollect();
 
-        ItemManager.Instance.AddCoins();
+        ItemManager.Instance.AddByType(ItemType.COIN);
     }
 }
