@@ -40,10 +40,10 @@ namespace Checkpoint
 
         private void SaveCheckpoint()
         {
-            /*if(PlayerPrefs.GetInt(_checkpointKey, 0)> key)
+            if(PlayerPrefs.GetInt(_checkpointKey, 0)> key)
             {
                 PlayerPrefs.SetInt(_checkpointKey, key);
-            }*/
+            }
 
             CheckpointManager.Instance.SaveCheckPoint(key);
 
