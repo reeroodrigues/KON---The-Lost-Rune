@@ -4,31 +4,67 @@ using UnityEngine;
 using TMPro;
 using Ebac.Core.Singleton;
 
-public class ItemManager : Singleton<ItemManager>
+namespace Itens
 {
-    public SOInt coins;
-    public TextMeshProUGUI uiTextCoins; 
-
-    private void Start()
+    public enum ItemType
     {
-        Reset();
+        COIN,
+        LIFE_PACK
     }
 
-    private void Reset()
+    public class ItemManager : Singleton<ItemManager>
     {
-        coins.value = 0;
-        UpdateUI();
+
+        public List<ItemSetup> itemSetups;
+
+        private void Start()
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            foreach(var i in itemSetups)
+            {
+                i.soInt.value = 0;
+            }
+        }
+
+        public void AddByType(ItemType itemType, int amount = 1)
+        {
+            if (amount < 0) return;
+            itemSetups.Find(i => i.itemType == itemType).soInt.value += amount;
+        }
+
+        public void RemoveByType(ItemType itemType, int amount = -1)
+        {
+            var item =  itemSetups.Find(i => i.itemType == itemType);
+            item.soInt.value -= amount;
+
+            if(item.soInt.value < 0)
+            {
+                item.soInt.value = 0;
+            }
+        }
+
+        [NaughtyAttributes.Button]
+        private void AddCoin()
+        {
+            AddByType(ItemType.COIN);
+        }
+
+        [NaughtyAttributes.Button]
+        private void AddLifePack()
+        {
+            AddByType(ItemType.LIFE_PACK);
+        }
     }
 
-    public void AddCoins(int amount = 1)
+    [System.Serializable]
+    public class ItemSetup
     {
-        coins.value += amount;
-        UpdateUI();
-    }
-
-    private void UpdateUI()
-    {
-        //uiTextCoins.text = coins.ToString();
-        //UIInGameManager.UpdateTextCoins(coins.value.ToString());
+        public ItemType itemType;
+        public SOInt soInt;
     }
 }
+
