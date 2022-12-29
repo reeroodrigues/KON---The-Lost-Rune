@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 53049
+  controlID: 11718
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 53050
+  controlID: 11719
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 53103
+  controlID: 11720
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 567
     width: 1466
     height: 390
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -427,9 +427,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: eaa8fcff
-      m_LastClickedID: -218902
-      m_ExpandedIDs: 8a5efcffeaa8fcffe2cffdff12d0fdff1ad0fdff9a13ffffd05affff3e9dffffd0abffffd2abffff08f6ffff0af6ffff12fbffff
+      m_SelectedIDs: 4e600000
+      m_LastClickedID: 24654
+      m_ExpandedIDs: ca23ffff5467ffff12fbffffbe5f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -711,9 +711,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 402.2787, y: -2.629045, z: 47.982674}
+    m_Target: {x: 414.46417, y: -3.1556947, z: 25.802452}
     speed: 2
-    m_Value: {x: 402.2787, y: -2.629045, z: 47.982674}
+    m_Value: {x: 414.46417, y: -3.1556947, z: 25.802452}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -760,13 +760,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.24620661, y: -0.19011647, z: 0.049314998, w: 0.9491231}
+    m_Target: {x: 0.32354397, y: 0.364031, z: -0.13651897, w: 0.8626677}
     speed: 2
-    m_Value: {x: 0.2462031, y: -0.19011374, z: 0.049314294, w: 0.9491095}
+    m_Value: {x: 0.32353875, y: 0.36402512, z: -0.13651678, w: 0.8626538}
   m_Size:
-    m_Target: 11.234617
+    m_Target: 18.60626
     speed: 2
-    m_Value: 11.234617
+    m_Value: 18.60626
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -813,7 +813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 321
     y: 73
-    width: 622
+    width: 550
     height: 546
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -843,11 +843,11 @@ MonoBehaviour:
     - e00: 0.6948188
       e01: 0
       e02: 0
-      e03: -10.60309
+      e03: -59.603096
       e10: 0
       e11: 0.6948188
       e12: 0
-      e13: 152.75607
+      e13: 157.75609
       e20: 0
       e21: 0
       e22: 1
@@ -913,22 +913,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Health
+    - Assets/Scripts/Checkpoint
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Health
+  - Assets/Scripts/Checkpoint
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Pipa\Desktop\KON - The Lost Rune
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 195}
-    m_SelectedIDs: 9ca70700
-    m_LastClickedID: 501660
-    m_ExpandedIDs: 0000000054670000626b00006a6b0000706b00002ab4000030b4000000ca9a3b
+    scrollPos: {x: 0, y: 55}
+    m_SelectedIDs: a2ba0100
+    m_LastClickedID: 113314
+    m_ExpandedIDs: 0000000096680000e868000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -956,7 +956,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005467000000ca9a3b
+    m_ExpandedIDs: 000000009668000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -981,21 +981,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: eaa8fcff
-    m_LastClickedInstanceID: -218902
+    m_SelectedInstanceIDs: 4e600000
+    m_LastClickedInstanceID: 24654
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000
+    m_ExpandedInstanceIDs: c6230000000000002eca0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: HealthBase
-      m_OriginalName: HealthBase
+      m_Name: CheckpointManager
+      m_OriginalName: CheckpointManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 501664
+      m_UserData: 139926
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -1070,7 +1070,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -218902
+  m_LastSelectedObjectID: -57790
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1106,7 +1106,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 348
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
