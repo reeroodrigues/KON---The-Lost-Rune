@@ -2704,6 +2704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7180fc344022344ac8ddf21a15d43f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliders:
+  - {fileID: 473642343}
+  - {fileID: 473642341}
   animator: {fileID: 1489761640}
   characterController: {fileID: 473642341}
   speed: 25
@@ -2794,7 +2797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLife: 3
-  destroyOnKill: 1
+  destroyOnKill: 0
   _currentLife: 0
 --- !u!1001 &480208794
 PrefabInstance:
