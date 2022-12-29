@@ -19,7 +19,10 @@ public class Player : MonoBehaviour//, IDamageable
     private float vSpeed = 0f;
     [Header("Flash")]
     public List<FlashColor> flashColors;
+
+    [Header("Flash")]
     public HealthBase healthBase;
+    public UIFillUpdater uiGunUpdater;
 
     private bool _alive = true;
 
@@ -36,7 +39,7 @@ public class Player : MonoBehaviour//, IDamageable
         OnValidate();
 
         healthBase.OnDamage += Damage;
-        healthBase.OnDamage += OnKill;
+        healthBase.OnKill += OnKill;
         
     }
 
