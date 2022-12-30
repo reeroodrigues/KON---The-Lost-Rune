@@ -9,6 +9,8 @@ public class PlayerAbilityShoot : PlayerAbilityBase
     public Transform gunPosition;
 
     private GunBase _currentGun;
+
+    public FlashColor flashColor;
     protected override void Init()
     {
         base.Init();
@@ -28,6 +30,7 @@ public class PlayerAbilityShoot : PlayerAbilityBase
     private void StartShoot()
     {
         _currentGun.StartShoot();
+        flashColor?.Flash();
         Debug.Log("Start Shoot");
     }
 

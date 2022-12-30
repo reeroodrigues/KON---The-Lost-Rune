@@ -14,6 +14,8 @@ public class FlashColor : MonoBehaviour
 
     private Tween _currTween;
 
+    public string colorParameter = "_EmissionColor";
+
     private void OnValidate()
     {
         if(meshRenderer == null)
