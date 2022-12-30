@@ -136,4 +136,17 @@ public class Player : Singleton<Player>//, IDamageable
             characterController.enabled = true;
         }
     }
+
+    public void ChangeSpeed(float speed, float duration)
+    {
+        StartCoroutine(ChangeSpeedCoroutine(speed, duration));
+    }
+
+    IEnumerator ChangeSpeedCoroutine(float localSpeed, float duration)
+    {
+        var defaultspeed = speed;
+        speed = localSpeed;
+        yield return new WaitForSeconds(duration);
+        speed = defaultspeed;
+    }
 }
