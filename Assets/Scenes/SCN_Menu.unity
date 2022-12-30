@@ -715,6 +715,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be43e5f085ea354fa266ecea169795a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &414487424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414487418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a1e624060527a4f8c252e21e6eb27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiTextName: {fileID: 3579342006930531600}
 --- !u!224 &545384729 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3579342007459089430, guid: 138959499fd0d464d93c8c95a0cd94cd, type: 3}
@@ -4062,6 +4075,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268333903897278500, guid: 2c2304854ab0d4242847ce71e5cea8ff, type: 3}
+      propertyPath: _saveSetup.lastLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 268333903897278500, guid: 2c2304854ab0d4242847ce71e5cea8ff, type: 3}
+      propertyPath: _saveSetup.playerName
+      value: Renan
+      objectReference: {fileID: 0}
     - target: {fileID: 268333903897278501, guid: 2c2304854ab0d4242847ce71e5cea8ff, type: 3}
       propertyPath: m_Name
       value: PFB_SaveManager
@@ -4277,6 +4298,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 138959499fd0d464d93c8c95a0cd94cd, type: 3}
+--- !u!114 &3579342006930531600 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3579342006679584052, guid: 138959499fd0d464d93c8c95a0cd94cd, type: 3}
+  m_PrefabInstance: {fileID: 3579342006930531599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3599994018380465399
 PrefabInstance:
   m_ObjectHideFlags: 0
