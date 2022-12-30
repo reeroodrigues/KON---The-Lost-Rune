@@ -4953,14 +4953,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 4273101537546403600}
-  flashColor: {fileID: 0}
+  flashColor: {fileID: 738543287}
   particleSystem: {fileID: 4273101537315820503}
   startLife: 10
   _currentLife: 0
   _animationBase: {fileID: 4273101537546403601}
+  OnKillEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   startAnimationDuration: 0.2
   startAnimationEase: 27
   startWithBornAnimation: 0
+  lookAtPlayer: 0
 --- !u!65 &4273101537546403600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5009,14 +5025,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 4273101537546403600}
-  flashColor: {fileID: 0}
+  flashColor: {fileID: 738543287}
   particleSystem: {fileID: 4273101537315820503}
   startLife: 10
   _currentLife: 0
   _animationBase: {fileID: 4273101537546403601}
-  startAnimationDuration: 0.2
+  OnKillEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startAnimationDuration: 0.5
   startAnimationEase: 27
   startWithBornAnimation: 1
+  lookAtPlayer: 0
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -5108,9 +5128,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
+--- !u!1 &4658917717103664917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8929186499503660615, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
+  m_PrefabInstance: {fileID: 4273101536724107602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &738543287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658917717103664917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c3f273f4d10034d979b1e865efa2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 6604300752038100672}
+  skinnedMeshRenderer: {fileID: 0}
+  color: {r: 1, g: 0, b: 0, a: 1}
+  duration: 0.1
+  colorParameter: _EmissionColor
 --- !u!4 &5470778804501513647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8115776127002297597, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
+  m_PrefabInstance: {fileID: 4273101536724107602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6604300752038100672 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6983442274928476050, guid: 86dc2d7519f0fa047a4a9adbc81a8da7, type: 3}
   m_PrefabInstance: {fileID: 4273101536724107602}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &6630162468247186073 stripped
