@@ -8,7 +8,8 @@ namespace Cloth
 {
     public enum ClothType
     {
-        SPEED
+        SPEED,
+        STRONG
     }
     public class ClothManager : Singleton<ClothManager>
     {
