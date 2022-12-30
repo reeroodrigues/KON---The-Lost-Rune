@@ -30,6 +30,7 @@ public class Player : Singleton<Player>//, IDamageable
     [SerializeField] private ClothChange _clothChange;
 
     private bool _alive = true;
+    private bool _jumping = false;
 
     private void OnValidate()
     {
@@ -99,10 +100,22 @@ public class Player : Singleton<Player>//, IDamageable
 
         if (characterController.isGrounded)
         {
+            if (_jumping)
+            {
+                _jumping = false;
+                animator.SetTrigger("Land");
+            }
+
             vSpeed = 0;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 vSpeed = jumpSpeed;
+                if (!_jumping)
+                {
+                    _jumping = true;
+                    animator.SetTrigger("Jump");
+                }
+                
             }
 
         }
