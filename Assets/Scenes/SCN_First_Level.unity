@@ -283,7 +283,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29293890}
-  m_LocalRotation: {x: 0.16634704, y: 0.6672735, z: -0.15657616, w: 0.70891374}
+  m_LocalRotation: {x: 0.16634703, y: 0.6672736, z: -0.15657617, w: 0.7089137}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3617,7 +3617,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496828686}
-  m_LocalRotation: {x: 0.03356686, y: -0.024265364, z: 0.0008152118, w: 0.9991416}
+  m_LocalRotation: {x: 0.03356682, y: -0.024265364, z: 0.00081521086, w: 0.9991416}
   m_LocalPosition: {x: 6.322357, y: -1.9099998, z: -7.104698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4483,7 +4483,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640363700}
-  m_LocalRotation: {x: 0.0000000014564364, y: 0.98556626, z: 0.000000008479015, w: -0.16929024}
+  m_LocalRotation: {x: -0.0000000014564364, y: 0.98556626, z: -0.000000008479015, w: -0.16929024}
   m_LocalPosition: {x: 423.07965, y: -5.065695, z: 30.476618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6255,6 +6255,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 504351397906332190, guid: fc6ad6b6ad2625840b2c45789b0cf425, type: 3}
   m_PrefabInstance: {fileID: 1329844643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &846185238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 846185240}
+  - component: {fileID: 846185239}
+  m_Layer: 0
+  m_Name: SFXPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &846185239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846185238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2875b195f7e64a34db204cae34562f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolSize: 10
+--- !u!4 &846185240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846185238}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2024303655}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &855513978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8275,7 +8320,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016377974}
-  m_LocalRotation: {x: 0.15345894, y: 0.67000425, z: -0.14444508, w: 0.7118148}
+  m_LocalRotation: {x: 0.15345894, y: 0.67000425, z: -0.14444506, w: 0.7118148}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16083,7 +16128,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500100153}
-  m_LocalRotation: {x: 0.16634706, y: 0.6672735, z: -0.15657616, w: 0.7089137}
+  m_LocalRotation: {x: 0.16634704, y: 0.6672736, z: -0.15657616, w: 0.7089136}
   m_LocalPosition: {x: 387.1882, y: 10.934305, z: 23.452663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25394,6 +25439,7 @@ Transform:
   m_Children:
   - {fileID: 1795084982}
   - {fileID: 515407622}
+  - {fileID: 846185240}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32309,6 +32355,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7666909642753455974, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
+      propertyPath: sfxSetups.Array.data[0].sfxType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666909642753455974, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
+      propertyPath: sfxSetups.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
     - target: {fileID: 7666909642753455975, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
       propertyPath: m_Name
       value: PFB_SoundManager
