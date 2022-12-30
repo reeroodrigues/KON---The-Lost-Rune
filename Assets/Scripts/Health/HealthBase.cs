@@ -49,8 +49,8 @@ public class HealthBase : MonoBehaviour, IDamageable
         if (_currentLife <= 0)
         {
             Kill();
-            UpdateUI();
         }
+        UpdateUI();
         OnDamage?.Invoke(this);
     }
 

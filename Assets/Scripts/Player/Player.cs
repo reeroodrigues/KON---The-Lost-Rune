@@ -131,7 +131,9 @@ public class Player : Singleton<Player>//, IDamageable
     {
         if (CheckpointManager.Instance.HasCheckpoint())
         {
+            characterController.enabled = false;
             transform.position = CheckpointManager.Instance.GetPositionFromLastCheckpoint();
+            characterController.enabled = true;
         }
     }
 }
