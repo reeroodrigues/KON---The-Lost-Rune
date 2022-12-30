@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4368574180210522065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 7764692177823142410, guid: 8b6d663ca1ef75c4691e8274e9a76b0b, type: 3}
   positionToShoot: {fileID: 4368574180916794465}
-  timeBetweenShoot: 3
+  timeBetweenShoot: 0.3
   speed: 50
   keyCode: 122
 --- !u!1 &4368574180916794494
