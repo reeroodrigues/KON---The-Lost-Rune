@@ -1006,7 +1006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157912081}
-  - component: {fileID: 157912082}
+  - component: {fileID: 157912084}
   - component: {fileID: 157912083}
   m_Layer: 0
   m_Name: ItemClothSpeed
@@ -1031,20 +1031,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &157912082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157912079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eca0fa84d6c45449af669354b1b7b45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clothType: 0
-  compareTag: Player
 --- !u!135 &157912083
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1058,6 +1044,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &157912084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157912079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c26c24aa8314e4384a17bcc680af4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothType: 0
+  compareTag: Player
+  duration: 2
+  targetSpeed: 50
 --- !u!1 &160361696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1606,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240465000}
-  m_LocalRotation: {x: 0.2687644, y: -0.023392424, z: 0.0065292898, w: 0.96289974}
+  m_LocalRotation: {x: 0.26876438, y: -0.023392424, z: 0.0065292884, w: 0.96289974}
   m_LocalPosition: {x: 6.322357, y: 4.302108, z: -7.104698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3187,6 +3189,7 @@ MonoBehaviour:
   - {fileID: 448809168}
   healthBase: {fileID: 473642344}
   uiGunUpdater: {fileID: 955706495}
+  _clothChange: {fileID: 1489761642}
 --- !u!4 &473642340
 Transform:
   m_ObjectHideFlags: 0
