@@ -21,6 +21,7 @@ KON - The Lost Rune nasceu de uma GameJam na qual eu participei em 2022, desde e
 
 📬 FEEDBACKS:
 Caso tenha feedbacks ou reclamações: renan_malveira@outlook.com
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ENGLISH VERSION:
 
@@ -39,8 +40,8 @@ With the very simple purpose, it will bring you the feeling of exploration and a
   - LeftShift: Run
   - Numbers 1 and 2: Change weapons.
   
-  🖥 TECHNICAL SPECIFICATIONS:
-  KON - The Lost Rune was born from a GameJam in which I participated in 2022, since then it has been prototyped and developed 100% by me. Thus following in constant     updating and improvements. Developed using the C# language and Unity as the main engine.
+🖥 TECHNICAL SPECIFICATIONS:
+KON - The Lost Rune was born from a GameJam in which I participated in 2022, since then it has been prototyped and developed 100% by me. Thus following in constant     updating and improvements. Developed using the C# language and Unity as the main engine.
   
-  📬 FEEDBACKS:
-  If you have feedback or complaints: renan_malveira@outlook.com
+📬 FEEDBACKS:
+If you have feedback or complaints: renan_malveira@outlook.com
