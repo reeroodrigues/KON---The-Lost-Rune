@@ -1758,7 +1758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240465000}
-  m_LocalRotation: {x: 0.2687644, y: -0.02338519, z: 0.0065272674, w: 0.9628999}
+  m_LocalRotation: {x: 0.26876444, y: -0.023385199, z: 0.0065272725, w: 0.9628999}
   m_LocalPosition: {x: 6.322357, y: 2.09, z: -7.104698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3845,8 +3845,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515407621}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -434.48367, y: 10.740734, z: -42.5731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.86, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15277,7 +15277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1390295992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15327,7 +15327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390295991}
   m_LocalRotation: {x: -0, y: 0.9953823, z: -0, w: 0.09598988}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24141,7 +24141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895512336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalPosition: {x: -0, y: 1.05, z: 0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32355,14 +32355,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7666909642753455974, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
-      propertyPath: sfxSetups.Array.data[0].sfxType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7666909642753455974, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
-      propertyPath: sfxSetups.Array.data[0].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
     - target: {fileID: 7666909642753455975, guid: 324acc5545a23d347a31db914a887cdd, type: 3}
       propertyPath: m_Name
       value: PFB_SoundManager
